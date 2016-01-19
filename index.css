@@ -1,0 +1,29 @@
+div{
+    border:2px solid black;
+    margin: 0 auto;
+    padding: 5px 5px 5px 5px;
+    }
+.row{
+    border:none;
+}
+.col-md-4,.col-md-3,.col-md-1{
+    min-height:150px;
+
+}
+img{
+    max-height:100px;
+    max-width:250px;
+}
+
+
+#logo{
+    display: block;
+    margin: 0 auto;
+}
+#fb{
+    display: block;
+    margin: 0 auto;
+    max-height:100px;
+    max-width:100px;
+}
+.Hidden{display:none}
