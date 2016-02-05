@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Games</title>
+    <link type="text/css" rel="stylesheet"
+          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet"
+          href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+
+            $.ajax({    //create an ajax request to load_page.php
+                type: "GET",
+                url: "result.php",
+                dataType: "html",   //expect html to be returned
+                success: function(response){
+                    $("#responsecontainer").html(response);
+                    //alert(response);
+                }
+
+            });
+
+
+        });
+
+    </script>
+</head>
+<body>
+<div class="container" id="responsecontainer">
+
+
+</div>
+</body>
+</html>
